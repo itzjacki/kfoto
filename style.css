@@ -1,0 +1,152 @@
+/*
+Palette:
+https://coolors.co/272d2d-a39ba8-b8c5d6-edf5fc-30c5ff
+#272D2D (Gray)
+#A39BA8 (Beige-pink)
+#B8C5D6 (Steel blue)
+#EDF5FC (Off-white)
+#30C5FF (Vibrant blue)
+*/
+body{
+    background-color: #EDF5FC;
+    color: #272D2D;
+    font-family: "Maven Pro", "Arial", Arial, sans-serif;
+    font-size: 18px;
+}
+#header{
+    display: flex;
+    background-color: #B8C5D6;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+}
+#imgLogo{
+    top: 0;
+    height: 100px;
+    width: 100px;
+
+}
+.linksHeader{
+    color: #272D2D;
+    height: 50px;
+    width: 30%;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+.linkInHeader{
+    position:relative;
+    color: #272D2D;
+    font-size: 22px;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+.linkInHeader:visited{
+    color: #272D2D;
+}
+.linkInHeader:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #272D2D;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.linkInHeader:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.mainBody{
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+#categoryContainer{
+    display: flex;
+    width: 70%;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.category{
+    position: relative;
+    background-color: #272D2D;
+    color: #EDF5FC;
+    min-width: 200px;
+    min-height: 323px;
+    width: 12.3vw;
+    height: 20vw;
+    margin: 4px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+.category:hover{
+    -webkit-filter: grayscale(100%);
+    filter:brightness(120%);
+    transition-duration: 0.3s;
+}
+.categoryName{
+    font-family: "Oswald";
+    font-size: 2.5vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5vw;
+    margin: auto;
+}
+#contractContainer{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+li > a{
+    color: #272D2D;
+}
+li > a:visited{
+    color: #272D2D;
+}
+#bioContainer{
+    display: flex;
+}
+#imgBio{
+    width: 307px;
+    height: 256px;
+}
+#imgContact{
+    width: 254px;
+    height: 199px;
+}
+#articleBio{
+    width: auto;
+    width: 70%
+}
+#bioText{
+    margin-right: 15px;
+}
+#contactContainer{
+    display: flex;
+}
+#contactText{
+    margin-right: 100px;
+}
+
+
+
