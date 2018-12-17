@@ -135,8 +135,7 @@ li > a:visited{
     height: 199px;
 }
 #articleBio{
-    width: auto;
-    width: 70%
+    width: 70%;
 }
 #bioText{
     margin-right: 15px;
@@ -147,6 +146,69 @@ li > a:visited{
 #contactText{
     margin-right: 100px;
 }
-
-
+.albumContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+.singleImageParent{
+    width: 33.33%;
+    padding-top: 33.33%;
+    overflow: hidden;
+    position: relative;
+}
+.singleImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #B8C5D6;
+    background-size: cover;
+    background-position: center center; 
+}
+.singleImageParent:hover .singleImage{
+    transform: scale(1.08);
+    transition: transform cubic-bezier(0.4, 0, 0.2, 1) 1000ms;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modalContent {
+    display: inline-block;
+    background-color: #272D2D;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.popupImage{
+    max-width: 70vw;
+    max-height: 70vh;
+}
 
