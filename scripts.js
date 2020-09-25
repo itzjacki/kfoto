@@ -8,7 +8,7 @@ window.onclick = function(event) {
 function populateGallery(imageCount, albumName, albumElement){
     for (var i = 0; i < imageCount; i++){
         albumElement.innerHTML += `
-            <div class="singleImageParent"><div style="background-image: url(img/${albumName}/${i+1}.jpg)" class="singleImage" onclick="viewImage(${i+1})"></div></div>
+            <div class="singleImageParent"><div style="background-image: url(img/${albumName}/${i+1}.webp)" class="singleImage" onclick="viewImage(${i+1})"></div></div>
         `;
     } 
 }
